@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <nav id="nav-main" class="navbar navbar-expand-lg">
+  <nav id="mainNav" class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" alt="Logo">
@@ -31,7 +31,7 @@
           <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">Pricing</a></li>
           <li class="nav-item">
-            <a class="nav-link nav-btn-download" href="#download">Download Now</a>
+            <a class="nav-link btn-nav-download" href="#download">Download Now</a>
           </li>
         </ul>
       </div>
@@ -43,21 +43,21 @@
   <section id="hero">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6 hero-wrapper">
+        <div class="col-lg-6 hero-content">
           <h1>Awesome App<br>App Landing Template</h1>
-          <p class="hero-intro">
+          <p class="hero-lead">
             An awesome landing page template to showcase your app features, screenshots,
             pricing, user testimonials and download links.
           </p>
-          <ul class="hero-list">
+          <ul class="hero-bullets">
             <li><i class="fa-solid fa-circle-dot fa-xs"></i> Amazing Design to Present Your App</li>
             <li><i class="fa-solid fa-circle-dot fa-xs"></i> Fully Responsive and Powered by Bootstrap &amp; PaperKit</li>
             <li><i class="fa-solid fa-circle-dot fa-xs"></i> Very Easy to Customize and Setup</li>
           </ul>
-          <a href="#features" class="btn-hero-cta">Start Exploring</a>
+          <a href="#features" class="btn-hero">Start Exploring</a>
         </div>
 
-        <div class="col-lg-6 hero-img-box">
+        <div class="col-lg-6 hero-image-wrap">
           <img src="img/img-hero.png" alt="Awesome App en celular">
         </div>
 
@@ -299,7 +299,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script>
 
-    const nav = document.getElementById('nav-main');
+    const nav = document.getElementById('mainNav');
     window.addEventListener('scroll', function() {
       nav.classList.toggle('scrolled', window.scrollY > 50);
     }, { passive: true });
